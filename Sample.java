@@ -29,15 +29,15 @@ class Umbrella
         float UGST;
         value=Uunit_price*UQuantity;
         UGST=value*12/100;
-        Total2=value+LGST;
+        Total2=value+UGST;
         Disvalue=Total2*5/100;//As the product unit price is greater than 500, 5% Discount//
         Total2=Total2-Disvalue;
     }
 }
 class Cigarette
 {
-    int Cunit_price=1100;
-    int CQuantity=1;
+    int Cunit_price=200;
+    int CQuantity=3;
     void calculateC()
     {
         int value;
@@ -46,15 +46,15 @@ class Cigarette
         float CGST;
         value=unit_price*Quantity;
         CGST=value*28/100;
-        Total3=value+LGST;
+        Total3=value+CGST;
         Disvalue=Total3*0/100;//As the product unit price is less than 500,No Discount//
         Total3=Total3-Disvalue;
     }
 }
 class Honey
 {
-    int Hunit_price=1100;
-    int HQuantity=1;
+    int Hunit_price=100;
+    int HQuantity=2;
     void calculateH()
     {
         int value;
@@ -62,8 +62,8 @@ class Honey
         float Disvalue;
         float HGST;
         value=Hunit_price*HQuantity;
-        HGST=value*18/100;
-        Total4=value+LGST;
+        HGST=value*0/100;
+        Total4=value+HGST;
         Disvalue=Total4*/100;//As the product unit price is less than 500, No Discount//
         Total4=Total4-Disvalue;
     }
